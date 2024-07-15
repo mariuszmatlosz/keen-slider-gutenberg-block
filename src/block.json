@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "keen-slider-block/keen-slider-block",
+	"version": "0.1.0",
+	"title": "Keen slider",
+	"category": "media",
+	"icon": "slides",
+	"description": "Main slider block (keen-slider)",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "keen-slider-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
