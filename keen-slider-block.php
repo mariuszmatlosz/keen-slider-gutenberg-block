@@ -25,7 +25,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function keen_slider_block_keen_slider_block_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function keen_slider_block_init() {
+    // Register each block individually
+    register_block_type( __DIR__ . '/build/slider' );
+    register_block_type( __DIR__ . '/build/slide' );
 }
-add_action( 'init', 'keen_slider_block_keen_slider_block_block_init' );
+add_action( 'init', 'keen_slider_block_init' );

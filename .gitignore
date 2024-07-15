@@ -6,4 +6,4 @@
 /node-modules
 
 # Lock files
-package-lock*
+*package-lock*
