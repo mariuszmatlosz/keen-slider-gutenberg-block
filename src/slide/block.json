@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "keen-slider-block/slide",
+	"version": "0.1.0",
+	"title": "Keen-slider slide",
+	"category": "media",
+	"icon": "cover-image",
+	"description": "A slide block for the Keen Slider.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"parent": ["keen-slider-block/slider"],
+	"allowedBlocks": ["core/image", "core/cover"],
+	"textdomain": "keen-slider-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
+

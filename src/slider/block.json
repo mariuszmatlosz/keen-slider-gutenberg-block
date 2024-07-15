@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "keen-slider-block/slider",
+	"version": "0.1.0",
+	"title": "Keen slider",
+	"category": "media",
+	"icon": "slides",
+	"description": "A custom Gutenberg block to create a Keen Slider.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"allowedBlocks": [
+		"keen-slider-block/slide"
+	],
+	"textdomain": "keen-slider-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
