@@ -3,11 +3,16 @@
  * 
  */
 
-import { InnerBlocks } from '@wordpress/block-editor';
+import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 
-export default function save() {
+export default function save({ attributes }) {
+  const { loop } = attributes;
+  const blockProps = useBlockProps.save({
+    className: 'keen-slider',
+    'data-loop': loop
+});
   return (
-    <div className="keen-slider">
+    <div {...blockProps} >
       <InnerBlocks.Content />
     </div>
   );

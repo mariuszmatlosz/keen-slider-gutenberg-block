@@ -14,6 +14,12 @@
 	"allowedBlocks": [
 		"keen-slider-block/slide"
 	],
+	"attributes": {
+		"loop": {
+			"type": "boolean",
+			"default": false
+		}
+	},
 	"textdomain": "keen-slider-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

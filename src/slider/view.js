@@ -28,6 +28,14 @@ import KeenSlider from 'keen-slider';
 document.addEventListener('DOMContentLoaded', function () {
     const sliders = document.querySelectorAll('.keen-slider');
     sliders.forEach(slider => {
-        new KeenSlider(slider);
+        let attribute = slider.dataset.loop;
+        if (attribute == "false") {
+            var isLoop = false;
+        } else {
+            var isLoop = true;
+        }
+        new KeenSlider(slider, {
+            loop: isLoop,
+          });
     });
 });
